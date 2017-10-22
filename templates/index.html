@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../static/css/bootstrap.min.css">
 	<!-- <link rel="stylesheet" href="../static/css/bootstrap.css"> -->
-	<link rel="stylesheet" href="../static/css/style.css">
-	<link rel="icon" type="image/png" href="../static/img/xLogo.png" />
+	<link rel="stylesheet" href="../../static/css/style.css">
+	<link rel="icon" type="image/png" href="../../static/img/xLogo.png" />
 	<title>Welcome | Apalax TI</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a href="#" class="navbar-brand"><img class="img-responsive" src="../static/img/apalaxTiLogo_white.png"></a>
+							<a href="#" class="navbar-brand"><img class="img-responsive" src="../../static/img/apalaxTiLogo_white.png"></a>
 						</div>
 						<div class="collapse navbar-collapse" id="navbarUno">
 							<ul class="nav navbar-nav pull-right">
@@ -33,7 +33,7 @@
 								<li><a href="/news">Noticias y Eventos</a></li>
 								<li><a href="/contact">Cont&aacute;ctanos</a></li>
 								<li class="divider-vertical"></li>
-								<li class="login"><a href="/login">Sign In</a></li>
+								<li class="login"><a data-toggle="modal" data-target="#myModal">Iniciar Sesi&oacute;n</a></li>
 							</ul>
 						</div>
 					</div>
@@ -60,9 +60,64 @@
 		</div>
 	</div>
 
-	<script src="../static/js/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js"></script>
-	<script src="../static/js/bootstrap.min.js"></script>
-	<script src="../static/js/app.js"></script>
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <!-- </div> -->
+      <div class="modal-body">
+		<div class="row">
+          <div id="form-signIn" class="col-md-6" align="center">
+      		<form>
+				<div class="col-md-12">
+					<div id="label-title" class="row" align="left">
+						<label>Inicia Sesi&oacute;n</label>
+					</div>
+					<br>
+					<div class="form-group">
+						<input id="txtUser" type="text" class="form-control" placeholder="Username"/>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+						<input id="txtPassword" type="password" class="form-control" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+						<button id="btn-login" class="btn">Iniciar Sesi&oacute;n</button>
+					</div>
+				</div>
+				<div id="refe" class="col-md-12" align="left">
+					<a href="">¿Olvidaste tu contrase&ntilde;a?</a>
+				</div>
+			</form>
+          </div>
+          <br>
+          <div id="form-signUp" class="col-md-6">
+          	<form id="signUp">
+					<div class="col-md-12">
+						<label id="label-title">Inscr&iacute;bete</label>
+					</div>
+					<div id="body-signUp" class="col-md-12">
+						<p>¿A&uacute;n no decides integrarte a nuestro equipo?</p>
+
+						<p>Conoce nuestros planes y ver&aacute;s que somos la mejor desici&oacute;n que tomaras para comenzar tu carrera laboral.</p>
+					</div>
+					<div class="col-md-12">
+						<button id="btn-register" class="btn">Inscribirme</button>
+					</div>
+				</form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<script src="../../static/js/jquery.min.js"></script>
+	<script src="../../static/js//typeIt.js"></script>
+	<script src="../../static/js/bootstrap.min.js"></script>
+	<script src="../../static/js/app.js"></script>
 </body>
 </html>

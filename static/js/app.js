@@ -1,6 +1,10 @@
 
 
     $(function() {
+        $('#txtUser').val("");
+        $('#txtPassword').val("");
+
+
     	$('body').css('display', 'none');
 		$('body').fadeIn(800);
 	    $('#dinamic_text').typeIt({
@@ -15,3 +19,8 @@
     function joinUs(){
     	window.location.href = "file:///C:/Users/Perey/Desktop/Apalax TI/templates/joinUs.html";
     }
+
+    // function toLogin(){
+    //     window.location.href= ="";
+    // }
+    // href="file:///C:/Users/Perey/Desktop/Apalax TI/templates/login.html"
